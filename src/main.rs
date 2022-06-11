@@ -4,8 +4,9 @@
 // When compiling natively:
 #[cfg(not(target_arch = "wasm32"))]
 
-mod grid_map;
-mod a_star;
+mod node;
+mod map;
+mod pathfinders;
 
 fn main() {
     // Log to stdout (if you run with `RUST_LOG=debug`).
