@@ -8,11 +8,10 @@ rust-version = "1.60"
 
 
 [dependencies]
-egui = "0.18.0"
-eframe = { version = "0.18.0", features = ["persistence"] }
-serde = { version = "1", features = ["derive"] } # You only need this if you want app persistence
+gtk = "0.15.5"
 array2d = "0.2.1"
 vector2d = "2.2.0"
+lazy_static="1.4.0"
 
 # native:
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
